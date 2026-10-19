@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+const origin='http://127.0.0.1:5173';
+const anonymous=await fetch(origin+'/api/admin');assert.equal(anonymous.status,403);
+const login=await fetch(origin+'/signin-with-chatgpt?return_to=/admin',{redirect:'manual'});
+const cookie=login.headers.getSetCookie().map(c=>c.split(';')[0]).join('; ');assert.ok(cookie);
+async function req(path,body,customOrigin=origin){return fetch(origin+path,{method:body?'POST':'GET',headers:{cookie,...(body?{'Content-Type':'application/json',origin:customOrigin}:{})},body:body?JSON.stringify(body):undefined});}
+const list=await req('/api/admin');assert.equal(list.status,200);assert.equal((await list.json()).documents.length,11);
+const cross=await req('/api/admin',{action:'create',id:'article-test-cross',title:'bad'},'https://attacker.example');assert.equal(cross.status,403);
+const id='article-test-'+Date.now();
+let response=await req('/api/admin',{action:'create',id,title:'מאמר בדיקה'});assert.equal(response.status,200);
+let doc=(await response.json()).doc;
+const values={title:'בדיקת פרסום בטוח',summary:'תקציר בדיקה',category:'בדיקות',body:'## כותרת משנה\n\nטקסט לבדיקה <script>alert(1)</script>'};
+response=await req('/api/admin',{id,action:'save',version:doc.version,values});assert.equal(response.status,200);doc=(await response.json()).doc;
+assert.equal((await fetch(origin+'/'+id+'.html')).status,404);
+assert.equal((await fetch(origin+'/'+id+'.html?preview=1')).status,403);
+const preview=await req('/'+id+'.html?preview=1');assert.equal(preview.status,200);assert.ok((await preview.text()).includes('&lt;script&gt;alert(1)&lt;/script&gt;'));
+response=await req('/api/admin',{id,action:'publish',version:doc.version,values});assert.equal(response.status,200);doc=(await response.json()).doc;
+const published=await fetch(origin+'/'+id+'.html');assert.equal(published.status,200);assert.ok((await published.text()).includes(values.title));
+assert.ok((await (await fetch(origin+'/articles.html')).text()).includes(id+'.html'));
+response=await req('/api/admin',{id,action:'save',version:0,values});assert.equal(response.status,409);
+response=await req('/api/admin',{id,action:'unpublish',version:doc.version,values});assert.equal(response.status,200);doc=(await response.json()).doc;
+assert.equal((await fetch(origin+'/'+id+'.html')).status,404);
+const history=(await (await req('/api/admin?id='+id)).json()).history;assert.ok(history.length>=3);
+response=await req('/api/admin',{id,action:'restore',version:doc.version,revisionId:history[0].id});assert.equal(response.status,200);
+const backup=await req('/api/admin?export=1');assert.equal(backup.status,200);assert.ok((await backup.json()).documents.some(d=>d.id===id));
+console.log('PASS: unauthorized access, CSRF, create, save, private drafts, XSS escaping, publish, listing, stale-write conflict, unpublish, restore, export');
+console.log('Local test document:',id);
