@@ -169,7 +169,7 @@ a:hover .link-arrow .ic,.link-arrow:hover .ic{transform:translateX(-5px)}
 .signs{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
 .signs .card h3{display:flex;align-items:center;gap:12px;margin:0 0 18px}
 .signs .card h3 .badge-ic{width:46px;height:46px;border-radius:14px}
-.note{display:flex;gap:12px;align-items:flex-start;margin-block-start:28px;padding:18px 22px;border-radius:var(--radius-sm);background:var(--surface);border:1px dashed var(--teal-300);color:var(--muted);font-size:1rem}
+.note{display:flex;gap:12px;align-items:flex-start;margin-block-start:12px;padding:18px 22px;border-radius:var(--radius-sm);background:var(--surface);border:1px dashed var(--teal-300);color:var(--muted);font-size:1rem}
 .note .ic{color:var(--teal-600);margin-block-start:4px}
 
 /* steps */
@@ -266,8 +266,8 @@ a.c-item:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
 .site-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .site-footer a:hover{color:#fff}
 .f-a11y{display:inline-flex;align-items:center;gap:.4rem;color:#cfe0e1;text-decoration:underline;text-underline-offset:3px}
-.f-about{margin-block-start:16px;max-width:380px;line-height:1.7}
-.f-social{display:flex;gap:6px;margin-block-start:16px}
+.f-about{margin-block-start:8px;max-width:380px;line-height:1.7}
+.f-social{display:flex;gap:6px;margin-block-start:8px}
 .f-social .icon-btn{color:#cfe0e1;background:rgba(255,255,255,.06)}
 .f-social .icon-btn:hover{background:rgba(255,255,255,.14);color:#fff}
 .f-bottom{margin-block-start:44px;padding-block-start:22px;border-block-start:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:.92rem;color:#8eaaac}
@@ -411,6 +411,104 @@ a.c-item:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
   .btn-row .btn{flex:1 1 100%}
 }
 @media print{.site-header,.wa-widget,.contact-box::before,.contact-box::after{display:none}.js .reveal{opacity:1;transform:none}}
+
+/* density */
+body{font-size:16.5px;line-height:1.55}
+h1{font-size:clamp(1.75rem,3.2vw,2.45rem)}
+h2{font-size:clamp(1.35rem,2.3vw,1.85rem)}
+h3{font-size:1.1rem}
+p{margin:0 0 .65em}
+.section{padding-block:44px}
+.lead{font-size:1.02rem;line-height:1.5}
+.sec-head{margin-block-end:18px}
+.sec-head h2{margin-block-end:6px}
+.sec-head p{font-size:.98rem}
+.eyebrow{margin-block-end:6px;font-size:.88rem}
+.hero{padding-block:28px 32px}
+.hero-grid,.ph-grid{gap:24px}
+.hero h1{margin-block:2px 8px}
+.hero .lead{margin-block-end:14px}
+.trust{margin-block-start:14px;gap:6px 16px}
+.page-hero{padding-block:18px 24px}
+.crumbs{margin-block-end:8px}
+.page-hero h1{margin-block:2px 8px}
+.page-hero .lead{margin-block-end:12px}
+.grid{gap:12px}
+.card{padding:14px 16px}
+.card h3{margin-block:6px 4px}
+.card p{font-size:.98rem}
+.service .art{height:100px}
+.service .art svg{height:82px}
+.service .body{padding:12px 14px 14px}
+.service h3{margin:0 0 4px;font-size:1.08rem}
+.service p{margin-block-end:8px}
+.checks{gap:7px}
+.checks li{font-size:.98rem;gap:8px}
+.signs{gap:12px}
+.note{margin-block-start:12px;padding:10px 12px}
+.steps{gap:10px}
+.steps li{padding:12px 14px}
+.steps .num{width:34px;height:34px;margin-block-end:6px;font-size:.95rem;box-shadow:0 0 0 4px var(--teal-50)}
+.steps h3{margin-block-end:4px}
+.split{gap:24px}
+blockquote.quote{margin:10px 0;padding:12px 14px;font-size:.98rem}
+blockquote.quote::before{font-size:2.4rem;inset-block-start:-8px}
+.principle{padding:12px 14px;gap:10px}
+.prose p{font-size:1rem}
+.prose h2{margin-block:18px 6px}
+.prose h3{margin-block:14px 4px;font-size:1.15rem}
+.facts .row{padding:8px 12px}
+.aud{gap:12px;padding:14px 16px}
+.aud+.aud{margin-block-start:10px}
+.aud-head h3{font-size:1.12rem;margin-block:4px 2px}
+.faq{gap:6px}
+.faq details{padding:0 14px;border-radius:12px}
+.faq summary{padding:10px 0;font-size:.98rem}
+.faq .ans{padding-block-end:10px;font-size:.96rem}
+.contact{padding-block:36px}
+.contact-box{padding:20px;gap:18px;border-radius:18px}
+.contact-box h2{margin-block-end:8px}
+.contact-box p{font-size:1rem}
+.form-card{padding:16px;border-radius:16px}
+.form-card .sub{margin-block-end:12px}
+.field{margin-block-end:10px}
+.field textarea{min-height:64px}
+.site-footer{padding-block:28px 12px}
+.f-grid{gap:18px}
+.f-about{margin-block-start:8px}
+.f-bottom{margin-block-start:14px;padding-block-start:10px}
+.article-hero{padding-block:18px 12px}
+.article-hero h1{margin-block:8px 8px}
+.article{padding-block:20px 8px}
+.nav{height:60px}
+.container{padding-inline:16px}
+.art-card .cover{height:64px}
+.art-card .cover .ic{width:36px;height:36px}
+.art-card .body{padding:12px 14px 12px}
+.art-card h3{font-size:1.05rem;margin:4px 0 4px}
+.art-card p{margin-block-end:8px}
+.btn{padding:.55rem 1rem;font-size:.98rem}
+.c-list{gap:8px}
+.c-item{padding:10px 12px}
+.c-item .v{font-size:1.05rem}
+.portrait{aspect-ratio:5/4}
+.callout{margin:14px 0;padding:12px 14px}
+.tip{padding:12px 14px;margin-block-end:10px}
+.timeline li{padding:12px 14px;gap:12px}
+.bottom-line{padding:16px 18px;margin:18px 0 0}
+@media (max-width:1060px){
+  .split{gap:20px}
+  .contact-box{padding:20px 16px}
+  .hero-art,.ph-art{max-width:240px}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .section,.contact{padding-block:32px}
+  .hero{padding-block:18px 22px}
+  .card,.aud{padding:12px}
+  .contact-box{padding:16px 12px}
+  .nav{height:56px}
+}
 </style>
 <meta property="og:type" content="article">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "7 דרכים לעודד שפה ותקשורת בבית – בתוך השגרה", "description": "שבע דרכים מעשיות להורים לעידוד התפתחות השפה והתקשורת של ילדים צעירים בתוך שגרת היום, ומה ההמלצות לגבי מסכים.", "inLanguage": "he", "author": {"@type": "Person", "name": "אליה וינשטיין", "jobTitle": "קלינאית תקשורת"}}</script>
@@ -447,7 +545,7 @@ a.c-item:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
     <nav aria-label="נתיב ניווט"><ol class="crumbs"><li><a href="index.html">דף הבית</a></li><li><a href="articles.html">מאמרים</a></li><li aria-current="page">7 דרכים לעודד שפה ותקשורת בבית</li></ol></nav>
     <span class="cat">טיפים להורים</span>
     <h1>7 דרכים לעודד שפה ותקשורת בבית – בתוך השגרה</h1>
-    <p class="lead">בלי תרגילים ובלי לשבת ליד השולחן: שבעה הרגלים פשוטים שהופכים כל רגע ביום להזדמנות לשפה.</p>
+    <p class="lead">שבעה הרגלים קצרים שמכניסים שפה ליום-יום.</p>
     <div class="byline"><span class="av" aria-hidden="true">א״ו</span><div><strong>אליה וינשטיין</strong>קלינאית תקשורת · 3 דקות קריאה</div></div>
   </div>
 </header>
@@ -481,15 +579,15 @@ a.c-item:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
     <div class="sec-head reveal" style="margin-block-end:32px"><span class="eyebrow">להמשך קריאה</span><h2 id="rel-title">מאמרים נוספים</h2></div>
     <div class="grid g-3"><a class="card hover art-card reveal d0" href="article-milestones.html">
   <div class="cover"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg></div>
-  <div class="body"><span class="cat">התפתחות שפה ודיבור</span><h3>אבני דרך בהתפתחות השפה – מתי כדאי לפנות?</h3><p>מה מצופה בכל גיל, אילו סימנים מצדיקים התייעצות, ומה נכון – ומה לא – לגבי "לחכות שזה יעבור".</p>
+  <div class="body"><span class="cat">התפתחות שפה ודיבור</span><h3>אבני דרך בהתפתחות השפה – מתי כדאי לפנות?</h3><p>מה מצופה בכל גיל, ומתי כדאי להתייעץ.</p>
   <div class="meta"><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>3 דקות קריאה</span></div></div>
 </a><a class="card hover art-card warm reveal d1" href="article-pragmatics.html">
   <div class="cover"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg></div>
-  <div class="body"><span class="cat">תקשורת חברתית</span><h3>מהי תקשורת חברתית (פרגמטיקה)?</h3><p>למה ילד שמדבר יפה יכול עדיין להתקשות בחברה, איך נראה קושי פרגמטי ביום-יום, ואיך אפשר לעזור.</p>
+  <div class="body"><span class="cat">תקשורת חברתית</span><h3>מהי תקשורת חברתית (פרגמטיקה)?</h3><p>למה דיבור תקין לא תמיד מספיק בחברה, ואיך עוזרים.</p>
   <div class="meta"><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>4 דקות קריאה</span></div></div>
 </a><a class="card hover art-card warm reveal d2" href="article-playdates.html">
   <div class="cover"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-  <div class="body"><span class="cat">מיומנויות חברתיות</span><h3>איך מתכננים מפגש חברתי מוצלח?</h3><p>מה עושים לפני, במהלך ואחרי מפגש עם חבר – כדי שיהפוך מחוויה מלחיצה להזדמנות ללמידה ולהצלחה.</p>
+  <div class="body"><span class="cat">מיומנויות חברתיות</span><h3>איך מתכננים מפגש חברתי מוצלח?</h3><p>לפני, במהלך ואחרי מפגש עם חבר.</p>
   <div class="meta"><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>3 דקות קריאה</span></div></div>
 </a></div>
   </div>
@@ -500,8 +598,8 @@ a.c-item:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
       <div>
         <span class="eyebrow">בואו נדבר</span>
         <h2 id="contact-title">יצירת קשר ותיאום פגישה</h2>
-        <p>לשאלות, להתייעצות או לתיאום פגישת היכרות והערכה – אשמח לשמוע מכם. השאירו פרטים ואחזור אליכם בהקדם, או צרו קשר ישירות בטלפון ובוואטסאפ.</p>
-        <div class="c-list" style="margin-block-start:28px">
+        <p>השאירו פרטים, או התקשרו. אחזור בהקדם.</p>
+        <div class="c-list" style="margin-block-start:12px">
           <a class="c-item" href="tel:+972522962625"><span class="ci"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span><span class="k">טלפון</span><span class="v" dir="ltr" style="display:block;text-align:end">052-296-2625</span></span></a>
           <a class="c-item wa" href="https://wa.me/972522962625?text=%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D" target="_blank" rel="noopener noreferrer"><span class="ci"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></span><span><span class="k">וואטסאפ</span><span class="v" style="display:block">שליחת הודעה מהירה</span></span></a>
           <div class="c-item"><span class="ci"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><span><span class="k">מיקום הקליניקה</span><span class="v" style="display:block">ראשון לציון</span></span></div>
@@ -512,12 +610,8 @@ a.c-item:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
         </div>
       </div>
 
-      <!-- ===== טופס יצירת קשר =====
-           לחיבור הטופס לשירות שליחת טפסים (למשל Formspree):
-           1. פותחים טופס בשירות ומעתיקים את כתובת השליחה שלו (למשל https://formspree.io/f/abcdwxyz).
-           2. מדביקים אותה בתוך data-endpoint="" שבשורה הבאה – בכל אחד מקובצי האתר.
-           כל עוד data-endpoint ריק, לחיצה על "שליחה" פותחת וואטסאפ עם הפרטים שמולאו, מוכנים לשליחה. -->
-      <form class="form-card" id="lead-form" method="post" data-endpoint="" novalidate aria-labelledby="form-title">
+      <!-- data-endpoint: כתובת Web App של Google Apps Script, מסתיימת ב-/exec. ריק = השליחה נעצרת. -->
+      <form class="form-card" id="lead-form" method="post" data-endpoint="https://script.google.com/macros/s/AKfycbzM0fktbm-N_7j2k_nf7ZLEVsrkdy9nByNaofEucJvXa4HW4CVCxZ0amlPhdfY5t-MD/exec" novalidate aria-labelledby="form-title">
         <h3 id="form-title">השאירו פרטים ואחזור אליכם</h3>
         <p class="sub">שדות המסומנים ב-* הם שדות חובה.</p>
         <input type="hidden" name="_subject" value="פנייה חדשה מאתר הקליניקה">
@@ -557,7 +651,7 @@ a.c-item:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
         </div>
         <label class="consent" for="f-consent"><input type="checkbox" id="f-consent" name="consent" value="yes" required aria-required="true" aria-describedby="f-consent-err"><span>אני מסכים/ה שאליה וינשטיין תיצור עמי קשר בנוגע לפנייה זו. *</span></label>
         <span class="err" id="f-consent-err" role="alert"></span>
-        <p class="privacy">הפרטים ישמשו אך ורק לצורך חזרה אליכם בנוגע לפנייה, ולא יועברו לגורם אחר מלבד שירות הטכנולוגיה המשמש למשלוח הטופס. מסירת הפרטים נעשית מרצונכם, ואפשר לבקש בכל עת לעיין בהם או למחוק אותם.</p>
+        <p class="privacy">הפרטים ישמשו רק לחזרה אליכם. אפשר לבקש בכל עת לעיין בהם או למחוק אותם.</p>
         <button class="btn btn-accent" type="submit" id="f-submit">שליחה</button>
         <div class="f-status" id="f-status" role="status" aria-live="polite"></div>
       </form>
@@ -573,7 +667,7 @@ a.c-item:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
         <a class="brand" href="index.html"><svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
 <path d="M24 4C12.4 4 4 11.6 4 21.5c0 5.4 2.6 10.1 6.8 13.3L9 44l9.6-5.2c1.7.4 3.5.6 5.4.6 11.6 0 20-7.8 20-17.9S35.6 4 24 4Z" fill="#2c4d54"/>
 <circle cx="16" cy="21.5" r="3" fill="#f6e3d8"/><circle cx="24" cy="21.5" r="3" fill="#e9a27f"/><circle cx="32" cy="21.5" r="3" fill="#f6e3d8"/></svg><span class="brand-text"><span class="brand-name">אליה וינשטיין</span><span class="brand-sub">קלינאית תקשורת · מיומנויות חברתיות</span></span></a>
-        <p class="f-about">קליניקה פרטית בראשון לציון להערכה וטיפול בשפה ובתקשורת אצל ילדים ונוער, בדגש על תקשורת חברתית – בטיפול פרטני, בקבוצות ובהדרכת הורים וצוותים.</p>
+        <p class="f-about">קליניקה בראשון לציון: שפה, תקשורת ומיומנויות חברתיות לילדים ונוער.</p>
         <div class="f-social">
           <a class="icon-btn" href="https://www.instagram.com/eliaw.slp/" target="_blank" rel="noopener noreferrer" aria-label="אינסטגרם"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2-.1-1.3-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4 1.2-.1 1.6-.1 4.8-.1M12 0C8.7 0 8.3 0 7.1.1 5.8.1 4.9.3 4.1.6c-.8.3-1.5.7-2.1 1.4C1.3 2.6.9 3.3.6 4.1.3 4.9.1 5.8.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.2.6 2.9.3.8.7 1.5 1.4 2.1.7.7 1.3 1.1 2.1 1.4.8.3 1.6.5 2.9.6 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c1.3-.1 2.2-.3 2.9-.6.8-.3 1.5-.7 2.1-1.4.7-.7 1.1-1.3 1.4-2.1.3-.8.5-1.6.6-2.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.2-.6-2.9-.3-.8-.7-1.5-1.4-2.1C21.4 1.3 20.7.9 19.9.6 19.1.3 18.2.1 16.9.1 15.7 0 15.3 0 12 0Zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9Z"/></svg></a>
           <a class="icon-btn" href="https://www.facebook.com/p/%D7%90%D7%9C%D7%99%D7%94-%D7%95%D7%99%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F-%D7%A7%D7%9C%D7%99%D7%A0%D7%90%D7%99%D7%AA-%D7%AA%D7%A7%D7%A9%D7%95%D7%A8%D7%AA-100095083710984/" target="_blank" rel="noopener noreferrer" aria-label="פייסבוק"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg></a>
@@ -628,40 +722,55 @@ a.c-item:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
       if(msg){el.setAttribute('aria-invalid','true');e.textContent=msg;}else{el.removeAttribute('aria-invalid');e.textContent='';}}
     function status(msg,ok){st.textContent=msg;st.className='f-status '+(ok?'ok':'bad');}
     function val(id){var el=document.getElementById(id);return el?el.value.trim():'';}
+    function fieldMessage(id){
+      if(id==='f-name'){
+        var n=val('f-name');
+        if(n.length<2) return 'נא למלא שם מלא';
+        if(!/[A-Za-z\u05D0-\u05EA]/.test(n)) return 'נא להזין שם תקין';
+        return '';
+      }
+      if(id==='f-phone'){
+        var raw=val('f-phone'), d=raw.replace(/\D/g,'');
+        if(!raw) return 'נא למלא מספר טלפון';
+        if(!(/^0\d{8,9}$/.test(d)||/^972\d{8,9}$/.test(d))) return 'מספר הטלפון אינו תקין';
+        return '';
+      }
+      if(id==='f-email'){
+        var em=val('f-email');
+        if(em&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)) return 'כתובת הדוא״ל אינה תקינה';
+        return '';
+      }
+      if(id==='f-consent') return document.getElementById('f-consent').checked?'':'יש לאשר יצירת קשר כדי לשלוח את הפנייה';
+      return '';
+    }
+    function check(id){var msg=fieldMessage(id); err(id,msg); return !msg;}
     function validate(){
       var first=null, ok=true;
-      function bad(id,msg){err(id,msg);ok=false;if(!first)first=document.getElementById(id);}
-      if(val('f-name').length<2){bad('f-name','נא למלא שם מלא');}else{err('f-name','');}
-      var d=val('f-phone').replace(/\D/g,'');
-      if(!(/^0\d{8,9}$/.test(d)||/^972\d{8,9}$/.test(d))){bad('f-phone','נא למלא מספר טלפון תקין');}else{err('f-phone','');}
-      var em=val('f-email');
-      if(em&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)){bad('f-email','כתובת הדוא״ל אינה תקינה');}else{err('f-email','');}
-      if(!document.getElementById('f-consent').checked){bad('f-consent','יש לאשר יצירת קשר כדי לשלוח את הפנייה');}else{err('f-consent','');}
+      ['f-name','f-phone','f-email','f-consent'].forEach(function(id){
+        if(!check(id)){ok=false; if(!first) first=document.getElementById(id);}
+      });
       if(first){first.focus();}
       return ok;
     }
-    ['f-name','f-phone','f-email','f-consent'].forEach(function(id){var el=document.getElementById(id);
-      if(el){el.addEventListener('change',function(){if(el.getAttribute('aria-invalid')){validate();}});}});
+    ['f-name','f-phone','f-email'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(!el) return;
+      el.addEventListener('blur',function(){check(id);});
+      el.addEventListener('input',function(){if(el.getAttribute('aria-invalid')){check(id);}});
+    });
+    var consentEl=document.getElementById('f-consent');
+    if(consentEl){consentEl.addEventListener('change',function(){if(consentEl.getAttribute('aria-invalid')){check('f-consent');}});}
     form.addEventListener('submit',function(ev){
       ev.preventDefault();
       if(form.elements['_gotcha']&&form.elements['_gotcha'].value){return;}
       if(!validate()){status('נא להשלים את השדות המסומנים.',false);return;}
       var endpoint=(form.getAttribute('data-endpoint')||'').trim();
-      if(!endpoint){
-        var lines=['שלום אליה, הגעתי דרך האתר ואשמח שתחזרי אליי.','שם: '+val('f-name'),'טלפון: '+val('f-phone')];
-        if(val('f-email'))lines.push('דוא״ל: '+val('f-email'));
-        if(val('f-age'))lines.push('גיל הילד/ה: '+val('f-age'));
-        if(val('f-service'))lines.push('נושא: '+val('f-service'));
-        if(val('f-msg'))lines.push('פרטים: '+val('f-msg'));
-        window.open('https://wa.me/972522962625?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');
-        status('נפתח חלון וואטסאפ עם הפרטים שמילאתם – נותר רק ללחוץ על "שליחה".',true);
-        return;
-      }
+      if(!endpoint){status('השליחה לגיליון עדיין לא מחוברת. אפשר להתקשר ל-052-296-2625.',false);return;}
       sb.disabled=true; sb.textContent='שולח...';
-      fetch(endpoint,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
-        .then(function(r){if(!r.ok){throw new Error('send');}
-          form.reset(); status('תודה! הפנייה התקבלה, ואחזור אליכם בהקדם.',true);})
-        .catch(function(){status('השליחה לא הצליחה. אפשר לנסות שוב, להתקשר ל-052-296-2625 או לשלוח הודעת וואטסאפ.',false);})
+      var payload={name:val('f-name'),phone:val('f-phone'),email:val('f-email'),child_age:val('f-age'),service:val('f-service'),message:val('f-msg'),consent:document.getElementById('f-consent').checked?'yes':'',page:pg?pg.value:'',_gotcha:form.elements['_gotcha']?form.elements['_gotcha'].value:''};
+      fetch(endpoint,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)})
+        .then(function(){form.reset(); status('תודה! הפנייה התקבלה, ואחזור אליכם בהקדם.',true);})
+        .catch(function(){status('השליחה לגיליון לא הצליחה. אפשר לנסות שוב, או להתקשר ל-052-296-2625.',false);})
         .then(function(){sb.disabled=false; sb.textContent='שליחה';});
     });
   }
