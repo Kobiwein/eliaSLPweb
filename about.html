@@ -6,6 +6,10 @@
 <title>אודות | אליה וינשטיין – קלינאית תקשורת</title>
 <meta name="description" content="אליה וינשטיין, קלינאית תקשורת התפתחותית מוסמכת, המתמחה בהערכה ובטיפול בקשיי תקשורת ובפיתוח מיומנויות חברתיות בקרב ילדים ונוער.">
 <meta name="theme-color" content="#2c4d54">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="he_IL">
 <meta property="og:title" content="אודות | אליה וינשטיין – קלינאית תקשורת">
@@ -68,7 +72,7 @@ section{position:relative}
 .btn-ghost{background:transparent;color:var(--teal-800);border-color:var(--teal-300)}
 .btn-ghost:hover{background:var(--surface);border-color:var(--teal-600)}
 .btn-white{background:#fff;color:var(--teal-900)}
-.btn-wa{background:#128c3e;color:#fff}
+.btn-wa{background:#12873e;color:#fff}
 .btn-wa:hover{background:#0f7a36}
 .btn-row{display:flex;flex-wrap:wrap;gap:14px}
 .link-arrow{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;color:var(--teal-700)}
@@ -254,7 +258,7 @@ a.c-item:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
 .c-item .ci .ic{width:24px;height:24px}
 .c-item .k{font-size:.9rem;color:#b9d3d6}
 .c-item .v{font-size:1.25rem;font-weight:800;color:#fff;line-height:1.3}
-.c-item.wa .ci{background:#1fae54}
+.c-item.wa .ci{background:#12873e}
 
 /* footer */
 .site-footer{background:var(--ink);color:#b9cccd;padding-block:64px 28px;font-size:1rem}
@@ -277,7 +281,7 @@ a.c-item:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
 .wa-close{width:26px;height:26px;border-radius:50%;background:#fff;border:1px solid var(--line);color:var(--muted);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--shadow-sm);padding:0}
 .wa-close .ic{width:14px;height:14px}
 .wa-close:hover{color:var(--ink)}
-.wa-btn{display:flex;align-items:center;gap:10px;background:#128c3e;color:#fff;border-radius:999px;padding:12px;box-shadow:0 14px 30px -10px rgba(31,174,84,.7);transition:transform .2s,background-color .2s}
+.wa-btn{display:flex;align-items:center;gap:10px;background:#12873e;color:#fff;border-radius:999px;padding:12px;box-shadow:0 14px 30px -10px rgba(31,174,84,.7);transition:transform .2s,background-color .2s}
 .wa-btn:hover{transform:scale(1.05);background:#0f7a36}
 .wa-btn .ic{width:32px;height:32px}
 .wa-btn .wa-label{font-weight:700;padding-inline-end:8px;display:none}
@@ -321,7 +325,7 @@ a.c-item:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
 .art-card.warm .cover{background:var(--accent-50);color:var(--accent-ink)}
 .art-card .cover .ic{width:64px;height:64px;stroke-width:1.4}
 .art-card .body{padding:26px 28px 28px;display:flex;flex-direction:column;flex:1}
-.art-card h3{font-size:1.3rem;margin:8px 0 10px}
+.art-card h2,.art-card h3{font-size:1.3rem;margin:8px 0 10px}
 .art-card p{flex:1;margin-block-end:18px}
 .meta{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.9rem;color:var(--muted);font-weight:600}
 .meta span{display:inline-flex;align-items:center;gap:.35rem}
@@ -347,9 +351,9 @@ a.c-item:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
 .callout p:last-child{margin:0}
 .callout strong{display:block;margin-block-end:4px}
 .tip{position:relative;padding:22px 24px 22px 24px;border-radius:18px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow-sm);margin-block-end:18px}
-.tip h3{display:flex;align-items:center;gap:12px;font-size:1.22rem;margin:0 0 8px}
-.tip h3 .n{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--teal-800);color:#fff;font-size:1rem;flex:none}
-.tip:nth-of-type(even) h3 .n{background:var(--accent-ink)}
+.tip h2,.tip h3{display:flex;align-items:center;gap:12px;font-size:1.22rem;margin:0 0 8px}
+.tip h2 .n,.tip h3 .n{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--teal-800);color:#fff;font-size:1rem;flex:none}
+.tip:nth-of-type(even) h2 .n,.tip:nth-of-type(even) h3 .n{background:var(--accent-ink)}
 .tip p{margin:0;color:var(--text);font-size:1.06rem}
 .tip .ex{margin-block-start:10px;padding:10px 14px;border-radius:12px;background:var(--sand);font-size:1rem;color:var(--ink)}
 .timeline{list-style:none;margin:24px 0;padding:0;display:grid;gap:16px}
@@ -485,7 +489,7 @@ blockquote.quote::before{font-size:2.4rem;inset-block-start:-8px}
 .art-card .cover{height:64px}
 .art-card .cover .ic{width:36px;height:36px}
 .art-card .body{padding:12px 14px 12px}
-.art-card h3{font-size:1.05rem;margin:4px 0 4px}
+.art-card h2,.art-card h3{font-size:1.05rem;margin:4px 0 4px}
 .art-card p{margin-block-end:8px}
 .btn{padding:.55rem 1rem;font-size:.98rem}
 .c-list{gap:8px}
@@ -509,6 +513,16 @@ blockquote.quote::before{font-size:2.4rem;inset-block-start:-8px}
   .contact-box{padding:16px 12px}
   .nav{height:56px}
 }
+
+@media (max-width:760px){
+  body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
+  .site-header{flex:none;max-height:70dvh;overflow:auto}
+  .page-scroll{flex:1 1 auto;min-height:0;overflow:auto;padding-bottom:16px;scroll-behavior:smooth}
+  .hero-art{max-width:100%;display:flex;flex-direction:column;align-items:center;gap:10px}
+  .hero-art>svg{width:min(230px,68vw);height:auto}
+  .hero-art .float-card{position:static;width:100%;max-width:420px}
+  .wa-widget{position:static;flex:none;align-self:flex-end;width:max-content;max-width:calc(100% - 16px);padding:8px 16px calc(12px + env(safe-area-inset-bottom,0px));inset:auto}
+}
 </style>
 
 </head>
@@ -516,7 +530,7 @@ blockquote.quote::before{font-size:2.4rem;inset-block-start:-8px}
 <a class="skip" href="#main">דילוג לתוכן הראשי</a>
 <header class="site-header" id="top">
   <div class="container nav">
-    <a class="brand" href="index.html" aria-label="אליה וינשטיין, קלינאית תקשורת – לדף הבית"><svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+    <a class="brand" href="index.html"><svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
 <path d="M24 4C12.4 4 4 11.6 4 21.5c0 5.4 2.6 10.1 6.8 13.3L9 44l9.6-5.2c1.7.4 3.5.6 5.4.6 11.6 0 20-7.8 20-17.9S35.6 4 24 4Z" fill="#2c4d54"/>
 <circle cx="16" cy="21.5" r="3" fill="#f6e3d8"/><circle cx="24" cy="21.5" r="3" fill="#e9a27f"/><circle cx="32" cy="21.5" r="3" fill="#f6e3d8"/></svg><span class="brand-text"><span class="brand-name">אליה וינשטיין</span><span class="brand-sub">קלינאית תקשורת · מיומנויות חברתיות</span></span></a>
     <nav aria-label="ניווט ראשי"><ul class="menu"><li><a href="social.html">קבוצות חברתיות</a></li><li><a href="individual.html">טיפול פרטני</a></li><li><a href="guidance.html">הדרכות</a></li><li><a href="articles.html">מאמרים</a></li><li><a href="about.html" aria-current="page">אודות</a></li></ul></nav>
@@ -536,6 +550,7 @@ blockquote.quote::before{font-size:2.4rem;inset-block-start:-8px}
     <a class="btn btn-primary" href="#contact">לתיאום פגישה</a>
   </div>
 </header>
+<div class="page-scroll">
 <main id="main">
 
 <section class="page-hero" aria-labelledby="ph-title">
@@ -570,7 +585,7 @@ blockquote.quote::before{font-size:2.4rem;inset-block-start:-8px}
       <blockquote class="quote">כלים מדויקים וסביבה שרואה את הילד בונים ביטחון וקשר.<footer>— אליה וינשטיין</footer></blockquote>
     </div>
     <div style="display:grid;gap:24px">
-      <aside class="facts reveal" aria-label="פרטים מקצועיים"><div class="facts-head">פרטים מקצועיים</div><div class="row"><span class="badge-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></span><div><div class="k">תואר מקצועי</div><div class="v">קלינאית תקשורת התפתחותית מוסמכת</div></div></div><div class="row"><span class="badge-ic warm"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span><div><div class="k">רישיון משרד הבריאות</div><div class="v">מס׳ <span class="todo">[להשלמה]</span></div></div></div><div class="row"><span class="badge-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/><path d="M22 10v6"/></svg></span><div><div class="k">השכלה</div><div class="v"><span class="todo">[תואר ומוסד לימודים – להשלמה]</span></div></div></div><div class="row"><span class="badge-ic warm"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><div><div class="k">מיקום הקליניקה</div><div class="v">ראשון לציון</div></div></div></aside>
+      <div class="facts reveal" role="region" aria-label="פרטים מקצועיים"><div class="facts-head">פרטים מקצועיים</div><div class="row"><span class="badge-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></span><div><div class="k">תואר מקצועי</div><div class="v">קלינאית תקשורת התפתחותית מוסמכת</div></div></div><div class="row"><span class="badge-ic warm"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span><div><div class="k">רישיון משרד הבריאות</div><div class="v">מס׳ <span class="todo">[להשלמה]</span></div></div></div><div class="row"><span class="badge-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/><path d="M22 10v6"/></svg></span><div><div class="k">השכלה</div><div class="v"><span class="todo">[תואר ומוסד לימודים – להשלמה]</span></div></div></div><div class="row"><span class="badge-ic warm"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><div><div class="k">מיקום הקליניקה</div><div class="v">ראשון לציון</div></div></div></div>
       <div class="card reveal" style="background:var(--teal-50);border-color:var(--teal-100)">
         <h3 style="margin:0 0 16px">תחומי מומחיות</h3>
         <ul class="chips">
@@ -692,10 +707,11 @@ blockquote.quote::before{font-size:2.4rem;inset-block-start:-8px}
     </div>
   </div>
 </footer>
-<div class="wa-widget" id="wa-widget">
-  <button class="wa-close" id="wa-close" type="button" aria-label="סגירת כפתור הוואטסאפ"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
-  <a class="wa-btn" href="https://wa.me/972522962625?text=%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D" target="_blank" rel="noopener noreferrer" aria-label="שליחת הודעת וואטסאפ"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg><span class="wa-label">דברו איתי בוואטסאפ</span></a>
 </div>
+<aside class="wa-widget" id="wa-widget" aria-label="יצירת קשר בוואטסאפ">
+  <button class="wa-close" id="wa-close" type="button" aria-label="סגירת כפתור הוואטסאפ"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <a class="wa-btn" href="https://wa.me/972522962625?text=%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D" target="_blank" rel="noopener noreferrer" aria-label="דברו איתי בוואטסאפ"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg><span class="wa-label">דברו איתי בוואטסאפ</span></a>
+</aside>
 <script>
 (function(){
   var hdr=document.querySelector('.site-header');
@@ -707,6 +723,22 @@ blockquote.quote::before{font-size:2.4rem;inset-block-start:-8px}
     b.addEventListener('click',function(){var o=p.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'סגירת תפריט':'פתיחת תפריט');});
     p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){p.classList.remove('open');b.setAttribute('aria-expanded','false');});});
   }
+
+  function scrollToHash(id){
+    var sc=document.querySelector('.page-scroll');
+    var el=id&&document.getElementById(id);
+    if(!sc||!el||!window.matchMedia('(max-width:760px)').matches) return false;
+    var top=el.getBoundingClientRect().top-sc.getBoundingClientRect().top+sc.scrollTop-8;
+    sc.scrollTo({top:Math.max(0,top),behavior:'smooth'});
+    return true;
+  }
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest&&ev.target.closest('a[href^="#"]');
+    if(!a) return;
+    var id=a.getAttribute('href').slice(1);
+    if(scrollToHash(id)) ev.preventDefault();
+  });
+  if(location.hash){requestAnimationFrame(function(){scrollToHash(location.hash.slice(1));});}
 
   var KEY='whatsapp_widget_dismissed_v1', w=document.getElementById('wa-widget'), c=document.getElementById('wa-close');
   try{
@@ -736,7 +768,12 @@ blockquote.quote::before{font-size:2.4rem;inset-block-start:-8px}
       if(id==='f-phone'){
         var raw=val('f-phone'), d=raw.replace(/\D/g,'');
         if(!raw) return 'נא למלא מספר טלפון';
-        if(!(/^0\d{8,9}$/.test(d)||/^972\d{8,9}$/.test(d))) return 'מספר הטלפון אינו תקין';
+        if(d.indexOf('972')===0) d='0'+d.slice(3);
+        var format=/^(?:05\d{8}|07\d{8}|0[23489]\d{7})$/.test(d);
+        var same=/^(\d)\1+$/.test(d);
+        var tail=d.slice(-7);
+        var tailSame=tail.length===7 && /^(\d)\1{6}$/.test(tail);
+        if(!format||same||tailSame) return 'מספר הטלפון אינו תקין';
         return '';
       }
       if(id==='f-email'){
